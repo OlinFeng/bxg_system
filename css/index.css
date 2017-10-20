@@ -1,0 +1,54 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container{
+    overflow: hidden;
+    width: 100%;
+}
+
+.aside{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0;
+    background-color: lightblue;
+}
+
+.aside .img-container{
+    height: 80px;
+    width: 80px;
+    margin: 20px auto 0;
+}
+
+.aside .img-container img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.aside>h3{
+    margin: 10px 0;
+}
+
+.main{
+    width: 100%;
+    left: 0;
+    position: absolute;
+    padding-left: 200px;
+}
+
+.main>.header{
+    background-color: lightblue;
+}
+
+.main>.body{
+    min-height: 600px;
+}
+
+.main>.body .breadcrumb{
+    background-color: lightblue;
+}
