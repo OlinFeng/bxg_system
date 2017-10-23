@@ -13,6 +13,7 @@ html,body{
     width: 200px;
     height: 100%;
     position: fixed;
+    z-index: 10;
     left: 0%;
     top: 0;
     background-color: lightblue;
@@ -35,10 +36,10 @@ html,body{
 }
 
 .main{
-    width: 100%;
     left: 0;
+    right: 0;
     position: absolute;
-    padding-left: 200px;
+    margin-left: 200px;
 }
 
 .main>.header{

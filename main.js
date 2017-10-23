@@ -11,7 +11,8 @@ require.config({
         bootstrap: '../assets/bootstrap/js/bootstrap',
         art: 'lib/template-web',
         text: 'lib/text',
-        teacherListTpls: '../tpls/teacherListTpls'
+        teacherListTpls: '../tpls/teacherListTpls',
+        teacherShowTpls: '../tpls/teacherShowTpls'
     },
     shim:{
         bootstrap:{
@@ -20,7 +21,7 @@ require.config({
     }
 })
 
-require(['jquery', 'teacher/list'],function($, teacherList){
+require(['jquery', 'teacher/list','bootstrap'],function($, teacherList){
 
 
     //设定点击的事件

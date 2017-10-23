@@ -1,6 +1,4 @@
 
-
-
 <div class="panel panel-default body">
     <div class="panel-body">
         <ol class="breadcrumb">
@@ -28,7 +26,7 @@
                 </thead>
                 <tbody>
                     {{each r}}
-                        <tr>
+                        <tr tc_id='{{$value.tc_id}}'>
                             <td>{{$value.tc_name}}</td>
                             <td>{{$value.tc_roster}}</td>
                             <td>{{$value.tc_gender==0?"男":"女"}}</td>
@@ -37,7 +35,11 @@
                             <td>{{$value.tc_status==0?"启用":"注销"}}</td>
                             <td>{{$value.tc_join_date}}</td>
                             <td>{{$value.tc_birthday}}</td>
-                            <td></td>
+                            <td>
+                                <button class="btn btn-success btn-show">查看</button>
+                                <button class="btn btn-primary">编辑</button>
+                                <button class="btn btn-info">注销</button>
+                            </td>
                         </tr>
                     {{/each}}
                 </tbody>
